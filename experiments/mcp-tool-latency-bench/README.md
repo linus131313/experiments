@@ -21,7 +21,7 @@ benchmark discards a configurable warm-up window before recording.
 
 ## How to run
 
-No external dependencies — pure Python 3.9+ stdlib.
+No external dependencies - pure Python 3.9+ stdlib.
 
 ```bash
 # full benchmark (100 iterations per transport, default)
