@@ -6,7 +6,7 @@ Format: `- [ ] <slug> - <one-line description>`. Mark `[x]` when finished. Pick 
 
 - [x] mcp-tool-latency-bench - Micro-benchmark measuring tool-call overhead across MCP transports (stdio vs SSE vs HTTP).
 - [x] mcp-schema-linter - Lint MCP server schemas against the spec; flag common mistakes (missing descriptions, unclear param names, over-broad types).
-- [ ] mcp-prompt-injection-corpus - Small curated corpus of adversarial tool-arg payloads with a scorer that reports how often the target model passes them through unmodified.
+- [x] mcp-prompt-injection-corpus - Small curated corpus of adversarial tool-arg payloads with a scorer that reports how often the target model passes them through unmodified.
 - [ ] agent-trajectory-viz - Parse a Claude / OpenAI transcript and render the tool-call trajectory as a Mermaid diagram.
 - [ ] agent-reliability-eval - Tiny eval framework for the reliability patterns I catalogued in my reliability-patterns paper (retry, fallback, external grounding, etc.) on a toy task.
 - [ ] eu-ai-act-tier-classifier - Rule-based classifier that takes a use-case description and returns the EU AI Act risk tier with citations to the article.
