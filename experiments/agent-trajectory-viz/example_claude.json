@@ -1,0 +1,60 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "What's in config.json? Also check if schema.json exists."
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {"type": "text", "text": "I'll read config.json first."},
+        {
+          "type": "tool_use",
+          "id": "tu_001",
+          "name": "read_file",
+          "input": {"path": "config.json"}
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "tu_001",
+          "content": "{\"model\": \"claude-sonnet-4-6\", \"temperature\": 0.7, \"max_tokens\": 2048}"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_use",
+          "id": "tu_002",
+          "name": "file_exists",
+          "input": {"path": "schema.json"}
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "tu_002",
+          "content": "false"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "config.json sets model to claude-sonnet-4-6 with temperature 0.7 and max_tokens 2048. schema.json does not exist."
+        }
+      ]
+    }
+  ]
+}

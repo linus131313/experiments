@@ -1,0 +1,88 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "Find all Python files and count lines in each."
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "tc_001",
+          "type": "function",
+          "function": {
+            "name": "search_files",
+            "arguments": "{\"pattern\": \"*.py\", \"root\": \".\"}" 
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "tc_001",
+      "content": "[\"main.py\", \"utils.py\", \"test_suite.py\"]"
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "tc_002",
+          "type": "function",
+          "function": {
+            "name": "count_lines",
+            "arguments": "{\"path\": \"main.py\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "tc_002",
+      "content": "142"
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "tc_003",
+          "type": "function",
+          "function": {
+            "name": "count_lines",
+            "arguments": "{\"path\": \"utils.py\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "tc_003",
+      "content": "87"
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "tc_004",
+          "type": "function",
+          "function": {
+            "name": "count_lines",
+            "arguments": "{\"path\": \"test_suite.py\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "tc_004",
+      "content": "203"
+    },
+    {
+      "role": "assistant",
+      "content": "Found 3 Python files: main.py (142 lines), utils.py (87 lines), test_suite.py (203 lines)."
+    }
+  ]
+}
