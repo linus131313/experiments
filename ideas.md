@@ -35,7 +35,7 @@ Format: `- [ ] <slug> - <one-line description>`. Mark `[x]` when finished. Pick 
 When the monthly trigger fires, pick a larger theme that deserves its own public repo (not a monorepo subfolder):
 
 - [x] mcp-schema-auditor - Static MCP schema auditor (lint + security + score), created as mcp-schema-auditor. Complements runtime mcp-governance-kit.
-- [ ] ai-act-navigator - Interactive CLI that walks you through the EU AI Act risk classification with citations.
+- [x] ai-act-navigator - Interactive CLI that walks you through the EU AI Act risk classification with citations.
 - [ ] reliability-patterns-playground - Runnable examples of each reliability pattern from the paper with adversarial test cases.
 - [ ] agent-trace-viewer - Full web UI (static) that turns agent JSONL traces into browsable trajectories.
 - [ ] iso-42001-workbench - Opinionated scaffolding for organisations starting an ISO 42001 implementation.
