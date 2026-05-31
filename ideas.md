@@ -10,7 +10,7 @@ Format: `- [ ] <slug> - <one-line description>`. Mark `[x]` when finished. Pick 
 - [x] agent-trajectory-viz - Parse a Claude / OpenAI transcript and render the tool-call trajectory as a Mermaid diagram.
 - [x] agent-reliability-eval - Tiny eval framework for the reliability patterns I catalogued in my reliability-patterns paper (retry, fallback, external grounding, etc.) on a toy task.
 - [x] eu-ai-act-tier-classifier - Rule-based classifier that takes a use-case description and returns the EU AI Act risk tier with citations to the article.
-- [ ] iso-42001-checklist-gen - Generator turning a YAML control spec into an auditor-friendly Markdown checklist aligned with ISO 42001.
+- [x] iso-42001-checklist-gen - Generator turning a YAML control spec into an auditor-friendly Markdown checklist aligned with ISO 42001.
 - [ ] nist-rmf-mapper - Map NIST AI RMF functions/categories to concrete code artefacts (tests, logs, cards) with a small demo mapping.
 - [ ] llm-routing-playground - Toy cost/latency-aware router between two mock model backends with a visualiser for routing decisions.
 - [ ] rag-robustness-eval - Inject controlled noise into a retrieval corpus and measure recall@k degradation on a toy dataset.
