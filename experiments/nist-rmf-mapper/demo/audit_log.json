@@ -1,0 +1,23 @@
+[
+  {
+    "timestamp": "2025-03-10T09:15:00Z",
+    "event": "model_deployed",
+    "version": "1.0",
+    "actor": "mlops-pipeline",
+    "environment": "staging"
+  },
+  {
+    "timestamp": "2025-03-11T14:30:00Z",
+    "event": "bias_review_completed",
+    "actor": "fairness-team",
+    "outcome": "approved",
+    "notes": "Disparate impact within acceptable bounds per policy 3.2"
+  },
+  {
+    "timestamp": "2025-03-15T08:00:00Z",
+    "event": "model_deployed",
+    "version": "1.0",
+    "actor": "mlops-pipeline",
+    "environment": "production"
+  }
+]

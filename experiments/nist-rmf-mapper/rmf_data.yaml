@@ -1,0 +1,86 @@
+# NIST AI Risk Management Framework 1.0
+# Source: https://doi.org/10.6028/NIST.AI.100-1
+# Each category lists which artifact types provide evidence for it.
+# Artifact types: tests, logs, model_card, docs, policy, audit, eval
+
+functions:
+  GOVERN:
+    description: >
+      Cultivate and implement organizational practices that embed AI risk
+      management across people, processes, and culture.
+    categories:
+      - id: GOV-1
+        name: Policies, processes, and procedures are in place
+        artifact_types: [policy, docs]
+      - id: GOV-2
+        name: Accountability and responsibility are assigned
+        artifact_types: [docs, policy]
+      - id: GOV-3
+        name: Workforce diversity and inclusion practices exist
+        artifact_types: [docs, policy]
+      - id: GOV-4
+        name: Organizational teams communicate AI risk openly
+        artifact_types: [docs, audit]
+      - id: GOV-5
+        name: Organizational policies address AI risk management
+        artifact_types: [policy, audit]
+      - id: GOV-6
+        name: Third-party and supply-chain risk policies are maintained
+        artifact_types: [policy, docs]
+
+  MAP:
+    description: >
+      Identify and classify AI-system contexts, risks, and impacts before
+      and during deployment.
+    categories:
+      - id: MAP-1
+        name: Context established for AI risk classification
+        artifact_types: [docs, model_card]
+      - id: MAP-2
+        name: Scientific and established AI methods are understood
+        artifact_types: [docs, eval]
+      - id: MAP-3
+        name: AI risks and benefits are catalogued
+        artifact_types: [model_card, docs]
+      - id: MAP-4
+        name: Risks and benefits are prioritized
+        artifact_types: [docs, policy]
+      - id: MAP-5
+        name: Likelihood and magnitude of risks are assessed
+        artifact_types: [eval, docs]
+
+  MEASURE:
+    description: >
+      Analyze, assess, and track AI risks using quantitative and qualitative
+      methods.
+    categories:
+      - id: MEASURE-1
+        name: Risk measurement approaches are identified and applied
+        artifact_types: [tests, eval]
+      - id: MEASURE-2
+        name: AI system behavior and effects are evaluated
+        artifact_types: [tests, eval, logs]
+      - id: MEASURE-3
+        name: AI risks are tracked over the system lifecycle
+        artifact_types: [logs, audit]
+      - id: MEASURE-4
+        name: Feedback on AI risks is gathered and integrated
+        artifact_types: [logs, audit, docs]
+
+  MANAGE:
+    description: >
+      Prioritize, respond to, and monitor residual AI risks through governance
+      and operational controls.
+    categories:
+      - id: MANAGE-1
+        name: AI risks are prioritized and responded to
+        artifact_types: [policy, audit]
+      - id: MANAGE-2
+        name: Residual AI risks are managed and documented
+        artifact_types: [logs, audit]
+      - id: MANAGE-3
+        name: AI risks are subject to human oversight
+        artifact_types: [audit, logs]
+      - id: MANAGE-4
+        name: Risk treatments are monitored and corrective actions taken
+        artifact_types: [tests, logs, audit]

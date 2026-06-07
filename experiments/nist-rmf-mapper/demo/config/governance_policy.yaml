@@ -1,0 +1,26 @@
+ai_governance_policy:
+  version: "1.0"
+  effective_date: "2025-01-01"
+  owner: Risk Analytics team
+
+  risk_tiers:
+    high:
+      review_required: true
+      legal_sign_off: true
+      human_override: mandatory
+    medium:
+      review_required: true
+      legal_sign_off: false
+      human_override: recommended
+    low:
+      review_required: false
+      legal_sign_off: false
+      human_override: optional
+
+  incident_response:
+    notification_sla_hours: 24
+    escalation_path: [team_lead, ciso, legal]
+
+  third_party_controls:
+    vendor_assessment: required
+    data_processing_agreement: required
