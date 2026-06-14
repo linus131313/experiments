@@ -12,7 +12,7 @@ Format: `- [ ] <slug> - <one-line description>`. Mark `[x]` when finished. Pick 
 - [x] eu-ai-act-tier-classifier - Rule-based classifier that takes a use-case description and returns the EU AI Act risk tier with citations to the article.
 - [x] iso-42001-checklist-gen - Generator turning a YAML control spec into an auditor-friendly Markdown checklist aligned with ISO 42001.
 - [x] nist-rmf-mapper - Map NIST AI RMF functions/categories to concrete code artefacts (tests, logs, cards) with a small demo mapping.
-- [ ] llm-routing-playground - Toy cost/latency-aware router between two mock model backends with a visualiser for routing decisions.
+- [x] llm-routing-playground - Toy cost/latency-aware router between two mock model backends with a visualiser for routing decisions.
 - [ ] rag-robustness-eval - Inject controlled noise into a retrieval corpus and measure recall@k degradation on a toy dataset.
 - [ ] agent-memory-comparator - Same toy workload across three memory backends (vector / graph / KV); compare retrieval quality and token cost.
 - [ ] xai-explanation-diff - Diff SHAP vs LIME explanations on a shared tabular classifier; surface cases where they disagree.
