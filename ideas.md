@@ -14,7 +14,7 @@ Format: `- [ ] <slug> - <one-line description>`. Mark `[x]` when finished. Pick 
 - [x] nist-rmf-mapper - Map NIST AI RMF functions/categories to concrete code artefacts (tests, logs, cards) with a small demo mapping.
 - [x] llm-routing-playground - Toy cost/latency-aware router between two mock model backends with a visualiser for routing decisions.
 - [x] rag-robustness-eval - Inject controlled noise into a retrieval corpus and measure recall@k degradation on a toy dataset.
-- [ ] agent-memory-comparator - Same toy workload across three memory backends (vector / graph / KV); compare retrieval quality and token cost.
+- [x] agent-memory-comparator - Same toy workload across three memory backends (vector / graph / KV); compare retrieval quality and token cost.
 - [ ] xai-explanation-diff - Diff SHAP vs LIME explanations on a shared tabular classifier; surface cases where they disagree.
 - [ ] tool-use-hallucination-detector - Flag inconsistent tool chains in agent transcripts (e.g., reading a file the agent never wrote).
 - [ ] openapi-to-mcp-gen - Toy generator that takes an OpenAPI spec and emits a minimal MCP server stub.
