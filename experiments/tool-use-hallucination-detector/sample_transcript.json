@@ -1,0 +1,12 @@
+{
+  "pre_existing_files": ["README.md", "requirements.txt"],
+  "steps": [
+    {"id": 1, "tool": "read_file",   "args": {"path": "README.md"}},
+    {"id": 2, "tool": "write_file",  "args": {"path": "output/report.txt", "content": "analysis"}},
+    {"id": 3, "tool": "read_file",   "args": {"path": "output/report.txt"}},
+    {"id": 4, "tool": "read_file",   "args": {"path": "output/summary.txt"}},
+    {"id": 5, "tool": "delete_file", "args": {"path": "output/report.txt"}},
+    {"id": 6, "tool": "read_file",   "args": {"path": "output/report.txt"}},
+    {"id": 7, "tool": "delete_file", "args": {"path": "ghost.py"}}
+  ]
+}
