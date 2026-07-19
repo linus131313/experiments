@@ -17,7 +17,7 @@ Format: `- [ ] <slug> - <one-line description>`. Mark `[x]` when finished. Pick 
 - [x] agent-memory-comparator - Same toy workload across three memory backends (vector / graph / KV); compare retrieval quality and token cost.
 - [x] xai-explanation-diff - Diff SHAP vs LIME explanations on a shared tabular classifier; surface cases where they disagree.
 - [x] tool-use-hallucination-detector - Flag inconsistent tool chains in agent transcripts (e.g., reading a file the agent never wrote).
-- [ ] openapi-to-mcp-gen - Toy generator that takes an OpenAPI spec and emits a minimal MCP server stub.
+- [x] openapi-to-mcp-gen - Toy generator that takes an OpenAPI spec and emits a minimal MCP server stub.
 - [ ] prompt-redactor - Regex + lightweight classifier pipeline that strips obvious PII / secrets from prompts before they hit a model.
 - [ ] consensus-sim - Minimal multi-agent consensus simulator (Byzantine-fault-tolerant voting among N agents with disagreement).
 - [ ] llm-cost-cli - CLI that estimates cost per request across providers given model, input tokens, output tokens.
