@@ -19,7 +19,7 @@ Format: `- [ ] <slug> - <one-line description>`. Mark `[x]` when finished. Pick 
 - [x] tool-use-hallucination-detector - Flag inconsistent tool chains in agent transcripts (e.g., reading a file the agent never wrote).
 - [x] openapi-to-mcp-gen - Toy generator that takes an OpenAPI spec and emits a minimal MCP server stub.
 - [x] prompt-redactor - Regex + lightweight classifier pipeline that strips obvious PII / secrets from prompts before they hit a model.
-- [ ] consensus-sim - Minimal multi-agent consensus simulator (Byzantine-fault-tolerant voting among N agents with disagreement).
+- [x] consensus-sim - Minimal multi-agent consensus simulator (Byzantine-fault-tolerant voting among N agents with disagreement).
 - [ ] llm-cost-cli - CLI that estimates cost per request across providers given model, input tokens, output tokens.
 - [ ] agent-failure-taxonomy - Structured YAML taxonomy of observed agent failure modes + a small visualiser.
 - [ ] prompt-version-tool - Git-native tool for versioning prompts with diffable test cases per version.
