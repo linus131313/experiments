@@ -22,7 +22,7 @@ Format: `- [ ] <slug> - <one-line description>`. Mark `[x]` when finished. Pick 
 - [x] consensus-sim - Minimal multi-agent consensus simulator (Byzantine-fault-tolerant voting among N agents with disagreement).
 - [x] llm-cost-cli - CLI that estimates cost per request across providers given model, input tokens, output tokens.
 - [x] agent-failure-taxonomy - Structured YAML taxonomy of observed agent failure modes + a small visualiser.
-- [ ] prompt-version-tool - Git-native tool for versioning prompts with diffable test cases per version.
+- [x] prompt-version-tool - Git-native tool for versioning prompts with diffable test cases per version.
 - [ ] synthetic-audit-trail - Generator for synthetic but realistic AI-system audit trails useful for compliance-tool testing.
 - [ ] tool-graph-score - Implementation of the Tool Graph Capability Score metric from my MCP governance paper on a small dataset.
 - [ ] mcp-transport-resilience - Fault-injection harness that drops / reorders messages on an MCP connection and measures recovery behaviour.
