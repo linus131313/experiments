@@ -1,0 +1,97 @@
+{
+  "tools": [
+    {
+      "name": "search-documents",
+      "description": "Search a document corpus with a keyword or semantic query and return ranked results.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": { "type": "string" },
+          "top_k": { "type": "integer", "default": 5 }
+        },
+        "required": ["query"]
+      }
+    },
+    {
+      "name": "fetch-document",
+      "description": "Retrieve the full text of a document by its ID.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "document_id": { "type": "string" }
+        },
+        "required": ["document_id"]
+      }
+    },
+    {
+      "name": "summarise-text",
+      "description": "Transform a long text into a concise summary using an extractive algorithm.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "text":       { "type": "string" },
+          "max_tokens": { "type": "integer", "default": 200 }
+        },
+        "required": ["text"]
+      }
+    },
+    {
+      "name": "extract-entities",
+      "description": "Parse and extract named entities (people, places, organisations) from text.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "text": { "type": "string" }
+        },
+        "required": ["text"]
+      }
+    },
+    {
+      "name": "store-result",
+      "description": "Save an analysis result object to the results store with a given key.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "key":   { "type": "string" },
+          "value": { "type": "object" }
+        },
+        "required": ["key", "value"]
+      }
+    },
+    {
+      "name": "run-classifier",
+      "description": "Execute a pre-trained classifier on input text and return predicted label and confidence.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "text":       { "type": "string" },
+          "model_name": { "type": "string" }
+        },
+        "required": ["text", "model_name"]
+      }
+    },
+    {
+      "name": "monitor-queue",
+      "description": "Subscribe to and stream events from a message queue topic.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "topic":         { "type": "string" },
+          "timeout_secs":  { "type": "integer", "default": 30 }
+        },
+        "required": ["topic"]
+      }
+    },
+    {
+      "name": "delete-document",
+      "description": "Permanently remove a document from the corpus by its ID.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "document_id": { "type": "string" }
+        },
+        "required": ["document_id"]
+      }
+    }
+  ]
+}

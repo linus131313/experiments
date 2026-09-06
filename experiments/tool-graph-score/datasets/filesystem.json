@@ -1,0 +1,49 @@
+{
+  "tools": [
+    {
+      "name": "list-directory",
+      "description": "List all files and subdirectories in a given directory path.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "path": { "type": "string", "description": "Directory path to list" }
+        },
+        "required": ["path"]
+      }
+    },
+    {
+      "name": "read-file",
+      "description": "Read the text content of a file at the given path.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "path": { "type": "string", "description": "File path to read" }
+        },
+        "required": ["path"]
+      }
+    },
+    {
+      "name": "write-file",
+      "description": "Write or overwrite a file with the given content.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "path":    { "type": "string", "description": "File path to write" },
+          "content": { "type": "string", "description": "Text content to write" }
+        },
+        "required": ["path", "content"]
+      }
+    },
+    {
+      "name": "delete-file",
+      "description": "Delete (remove) a file from the filesystem permanently.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "path": { "type": "string", "description": "File path to delete" }
+        },
+        "required": ["path"]
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "tools": [
+    {
+      "name": "get-weather",
+      "description": "Fetch current weather data for a city.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "city": { "type": "string" }
+        },
+        "required": ["city"]
+      }
+    }
+  ]
+}
