@@ -1,0 +1,36 @@
+name: restricted-researcher
+version: 1
+
+# Rules are evaluated top-to-bottom. First match wins.
+# Unmatched tool calls are denied by default.
+rules:
+  # Allow reading files only under /data/
+  - tool: read_file
+    allow: true
+    conditions:
+      - arg: path
+        op: starts_with
+        value: /data/
+
+  # Deny reading files outside /data/ (catches the fallthrough)
+  - tool: read_file
+    allow: false
+
+  # Block all writes
+  - tool: write_file
+    allow: false
+
+  # Block any tool whose name starts with exec_
+  - tool: "exec_*"
+    allow: false
+
+  # Allow web search but rate-limit to 5 calls per 60 seconds
+  - tool: web_search
+    allow: true
+    rate_limit:
+      calls: 5
+      window_seconds: 60
+
+  # Deny everything else
+  - tool: "*"
+    allow: false
